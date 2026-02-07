@@ -13,7 +13,7 @@ public class Sayhelloapp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Helloooooo tai duoc eclipse roi ne thay uiii");
-
+		System.out.println ("Xin chào anh em hé hé");
 	}
 
 }
