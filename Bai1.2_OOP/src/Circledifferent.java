@@ -9,14 +9,12 @@ public class Circledifferent {
 		
 		public Circledifferent() {
 			bk = 1.0;
-			color = "red";
 		}
 		
 		//hàm tạo 2
 		
 		public Circledifferent(double r) {
 			bk = r;
-			color = "red";
 		}
 		
 		//trả về bán kính
@@ -46,7 +44,7 @@ public class Circledifferent {
 		//toString
 		
 		public String toString() {
-		String s =  "Circle [bán kính = " + bk + ", màu = " + color + "]";
+		String s =  "Circle [bán kính = " + bk + "]";
 		return s;
 		}
 		
