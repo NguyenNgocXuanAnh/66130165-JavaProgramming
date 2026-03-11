@@ -43,7 +43,7 @@ public class hcn {
 	//toString
 	
 	public String toString () {
-		String s = "Hình chữ nhật[chiều dài = " + dai + ", chiều rộng = " + rong;
+		String s = "Hình chữ nhật[chiều dài = " + dai + ", chiều rộng = " + rong + "]";
 		return s;
 	}
 	
