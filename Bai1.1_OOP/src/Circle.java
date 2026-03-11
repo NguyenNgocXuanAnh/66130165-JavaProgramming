@@ -31,4 +31,27 @@ public class Circle {
 	public double getArea() {
 		return bk * bk * Math.PI;
 	}
+	
+	public String getColor() {
+		return color;
+	}
+	
+	//thiết lập bán kính new
+	
+	public void setRadius (double newRadius) {
+		bk = newRadius;
+	}
+	
+	//thiết lập màu mới 
+	
+	public void setColor (String newColor) {
+		color = newColor;
+	}
+	
+	//toString
+	
+	public String toString() {
+	String s =  "Circle [bán kính = " + bk + ", màu = " + color + "]";
+	return s;
+	}
 }
