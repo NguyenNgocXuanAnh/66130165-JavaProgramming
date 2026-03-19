@@ -3,7 +3,7 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Employee e1 = new Employee(8, "Vo", "Hung", 2500);
+		Employee e1 = new Employee(8, "Xuân", "Ánh", 2500);
 	    System.out.println(e1);
 	    
 	    e1.setSalary(1000);
