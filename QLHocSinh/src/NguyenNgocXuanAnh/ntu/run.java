@@ -57,16 +57,16 @@ public class run {
 		for (int i = 0; i<n; i++) {
 			HocSinh hsi = new HocSinh ();
 
-			System.out.print("\nMời nhập tên của của học sinh thứ " + i+1 + ": "); //in ra hd và đợi
+			System.out.print("\nMời nhập tên của của học sinh thứ " + i + ": "); //in ra hd và đợi
 			String tenHSi = banPhim.nextLine();
 			hsi.setTenHS(tenHSi);
 			
-			System.out.print("Mời nhập tuổi của học sinh thứ " + i+1 + ": ");
+			System.out.print("Mời nhập tuổi của học sinh thứ " + i + ": ");
 			short tuoiHSi = banPhim.nextShort();
 			hsi.setTuoiHS(tuoiHSi);
 			banPhim.nextLine();
 			
-			System.out.print("Mời nhập lớp của học sinh thứ " + i+1 + ": ");
+			System.out.print("Mời nhập lớp của học sinh thứ " + i + ": ");
 			String lopHSi = banPhim.nextLine();
 			hsi.setLopHS(lopHSi);
 			// đưa vào danh sách
@@ -102,15 +102,20 @@ public class run {
 		}
 		
 		//5a
-		//Tìm hs tên Hoa
+		//Tìm hs tên Hoa dautien trong ds và xóa
+		System.out.println("\n5a");
+
 		for (int i = 0; i<n; i++) {
 			HocSinh hsTim = dsHocSinh.get(i);
-			if (hsTim.getTenHS() == "Hoa") {
+			//if (hsTim.getTenHS() == "Hoa") { 
+			//dòng trên em làm theo video hướng dẫn bị lỗi nên em hỏi chat gpt ra lệnh này
+			if (hsTim.getTenHS().equals("Hoa")) {
 				dsHocSinh.remove(hsTim);
+				n--;
 				break;
 			}
 		}
-		n--;
+		//5b
 		for (int i = 0; i<n; i++) {
 			System.out.print(dsHocSinh.get(i).toString());
 		}
