@@ -1,5 +1,6 @@
 package NguyenNgocXuanAnh.ntu;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class run {
 
 	public static void main(String[] args) {
@@ -46,6 +47,36 @@ public class run {
 		//In hs 3 ra màn hình 
 		
 		System.out.print(hs3.toString() );
+		
+		
+		// Nhập ds N hs
+		ArrayList<HocSinh> dsHocSinh = new ArrayList <HocSinh> ();
+		System.out.print("\nMời nhập số lượng sinh viên (nhập n): ");
+		int n = banPhim.nextInt();
+		banPhim.nextLine();
+		for (int i = 0; i<n; i++) {
+			HocSinh hsi = new HocSinh ();
+
+			System.out.print("\nMời nhập tên của của học sinh thứ " + i+1 + ": "); //in ra hd và đợi
+			String tenHSi = banPhim.nextLine();
+			hsi.setTenHS(tenHSi);
+			
+			System.out.print("Mời nhập tuổi của học sinh thứ " + i+1 + ": ");
+			short tuoiHSi = banPhim.nextShort();
+			hsi.setTuoiHS(tuoiHSi);
+			banPhim.nextLine();
+			
+			System.out.print("Mời nhập lớp của học sinh thứ " + i+1 + ": ");
+			String lopHSi = banPhim.nextLine();
+			hsi.setLopHS(lopHSi);
+			// đưa vào danh sách
+			dsHocSinh.add(hsi);
+		}
+		//in ra
+		for (int i = 0; i<n; i++) {
+			System.out.print(dsHocSinh.get(i).toString());
+		}
+		// Bổ Sung thêm
 		
 	}
 
