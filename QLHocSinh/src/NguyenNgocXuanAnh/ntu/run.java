@@ -48,7 +48,7 @@ public class run {
 		
 		System.out.print(hs3.toString() );
 		
-		
+		//3a
 		// Nhập ds N hs
 		ArrayList<HocSinh> dsHocSinh = new ArrayList <HocSinh> ();
 		System.out.print("\nMời nhập số lượng sinh viên (nhập n): ");
@@ -72,11 +72,48 @@ public class run {
 			// đưa vào danh sách
 			dsHocSinh.add(hsi);
 		}
+		//3b
 		//in ra
 		for (int i = 0; i<n; i++) {
 			System.out.print(dsHocSinh.get(i).toString());
 		}
+		//4a
 		// Bổ Sung thêm
+		HocSinh hsThem = new HocSinh();
+		System.out.print("\nMời nhập tên của của học sinh thêm: "); //in ra hd và đợi
+		String tenHSThem = banPhim.nextLine();
+		hsThem.setTenHS(tenHSThem);
+		
+		System.out.print("Mời nhập tuổi của học sinh thêm: ");
+		short tuoiHSThem = banPhim.nextShort();
+		hsThem.setTuoiHS(tuoiHSThem);
+		banPhim.nextLine();
+		
+		System.out.print("Mời nhập lớp của học sinh thêm: ");
+		String lopHSThem = banPhim.nextLine();
+		hsThem.setLopHS(lopHSThem);
+		// đưa vào danh sách
+		n=n+1;
+		dsHocSinh.add(hsThem);
+		//4b
+		//in ra 
+		for (int i = 0; i<n; i++) {
+			System.out.print(dsHocSinh.get(i).toString());
+		}
+		
+		//5a
+		//Tìm hs tên Hoa
+		for (int i = 0; i<n; i++) {
+			HocSinh hsTim = dsHocSinh.get(i);
+			if (hsTim.getTenHS() == "Hoa") {
+				dsHocSinh.remove(hsTim);
+				break;
+			}
+		}
+		n--;
+		for (int i = 0; i<n; i++) {
+			System.out.print(dsHocSinh.get(i).toString());
+		}
 		
 	}
 
