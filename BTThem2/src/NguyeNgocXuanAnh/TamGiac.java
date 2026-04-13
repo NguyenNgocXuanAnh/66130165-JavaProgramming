@@ -67,7 +67,7 @@ public class TamGiac {
 		
 	}
 	public float ChuVi (float a, float b, float c) {
-		return (a + b + c)/2;
+		return (a + b + c);
 	}
 	public double DienTich (float a, float b, float c) {
 		float p = (a + b + c)/2;
@@ -77,9 +77,8 @@ public class TamGiac {
 	@Override
 	public String toString() {
 		//return "TamGiac [a=" + a + ", b=" + b + ", c=" + c + "]";
-		if (kiemtraTG (a,b,c) == 1) {
+		if (kiemtraTG (a,b,c) == 1)
 			return "a: " + a + ", b: " + b + ", c: " + c + " là 3 cạnh của một tam giác";
-		}
 		else 
 			return "a: " + a + ", b: " + b + ", c: " + c + " không là 3 cạnh của một tam giác";
 			

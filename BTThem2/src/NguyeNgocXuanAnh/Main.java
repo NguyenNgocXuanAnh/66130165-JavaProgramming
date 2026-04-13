@@ -27,8 +27,14 @@ public class Main {
 		tg1.setC(canhc);
 		
 		//in tg ra man hinh
-		if (tg1.kiemtraTG(canha, canhb, canhc) == 1)
-			System.out.println(tg1.toString());
+		if (tg1.kiemtraTG(canha, canhb, canhc) == 1) {
+		    System.out.println(tg1.toString());
+		    tg1.loạiTG(canha, canhb, canhc);
+		    System.out.println("Chu vi: " + tg1.ChuVi(canha, canhb, canhc));
+		    System.out.printf("Dien tich: %.2f\n", tg1.DienTich(canha, canhb, canhc));
+		} else {
+		    System.out.println(tg1.toString());
+		}
 		
 	}
 
