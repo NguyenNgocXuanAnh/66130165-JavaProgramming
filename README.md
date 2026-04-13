@@ -63,5 +63,5 @@ Lớp chính: TamGiac, Main
 ## 👽 Tác giả
 MSSV: 66130165 · Môn học: Lập trình Java
 <p>
-Cảm ơn bạn đã ghé thăm — một star sẽ rất được trân trọng
+                        Cảm ơn bạn đã ghé thăm — một star sẽ rất được trân trọng
 </p>
