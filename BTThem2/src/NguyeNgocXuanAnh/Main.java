@@ -32,7 +32,8 @@ public class Main {
 		    tg1.loạiTG(canha, canhb, canhc);
 		    System.out.println("Chu vi: " + tg1.ChuVi(canha, canhb, canhc));
 		    System.out.printf("Dien tich: %f\n", tg1.DienTich(canha, canhb, canhc));
-		} else {
+		} 
+		else {
 		    System.out.println(tg1.toString());
 		}
 		
