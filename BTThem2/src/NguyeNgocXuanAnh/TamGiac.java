@@ -39,19 +39,19 @@ public class TamGiac {
 	
 	//kt a, b, c có phải tam giác không
 	public int kiemtraTG (float a, float b, float c) {
-		if (a + b > c && a + c > b && b + c > a) {
-			System.out.println ("Ba cạnh a, b, c là ba cạnh của một tam giác");
+		if (a + b > c && a + c > b && b + c > a)
 			return 1;
-		}
-		else {
-			System.out.println ("Ba cạnh a, b, c không là ba cạnh của một tam giác");
+		else
 			return 0;
-		}
 	}
-	//nếu là tam giac thì a, b, c là tam giác gì
+	//nếu là tam giac thì a, b, c là tam giác gì 
+	
 	public void loạiTG (float a, float b, float c) {
 		if ((a == b) && (b == c))
 			System.out.println ("Đây là tam giac đều");
+		else if (((a *a + b *b == c *c) || (a *a + c *c == b *b) || (b *b + c *c == a *a))
+				&& ((a == b) || (a == c) || (b == c)))
+		System.out.println ("Đây là tam giac vuông cân");
 		else if ((a *a + b *b == c *c) || (a *a + c *c == b *b) || (b *b + c *c == a *a))
 			System.out.println ("Đây là tam giác vuông");
 		else if ((a == b) || (a == c) || (b == c))
@@ -69,6 +69,17 @@ public class TamGiac {
 	public double DienTich (float a, float b, float c) {
 		float p = (a + b + c)/2;
 		return Math.sqrt(p*(p-a)*(p-b)*(p-c));
+	}
+
+	@Override
+	public String toString() {
+		//return "TamGiac [a=" + a + ", b=" + b + ", c=" + c + "]";
+		if (kiemtraTG (a,b,c) == 1) {
+			return "a: " + a + ", b: " + b + ", c: " + c + " là 3 cạnh của một tam giác";
+		}
+		else 
+			return "a: " + a + ", b: " + b + ", c: " + c + " không là 3 cạnh của một tam giác";
+			
 	}
 	
 }
