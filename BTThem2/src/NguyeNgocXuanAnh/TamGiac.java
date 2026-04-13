@@ -6,6 +6,9 @@ public class TamGiac {
 	private float c;
 	
 	//hàm tạo
+	public TamGiac() {
+		
+	}
 	public TamGiac(float a, float b, float c) {
 		super();
 		this.a = a;
