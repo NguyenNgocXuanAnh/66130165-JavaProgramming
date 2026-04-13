@@ -1,5 +1,5 @@
 # 📌 Một số thông tin thú vị về kho lưu trữ này
-Các dự án bài tập, ví dụ và sản phẩm thực hành trong kho lưu trữ này là nhật ký ghi lại quá trình học tập và rèn luyện môn Lập trình Java của Nguyễn Ngọc Xuân Ánh - quyền sở hữu và sáng.
+Các dự án bài tập, ví dụ và sản phẩm thực hành trong kho lưu trữ này là nhật ký ghi lại quá trình học tập và rèn luyện môn Lập trình Java của Nguyễn Ngọc Xuân Ánh - quyền sở hữu và sáng tạo.
 ## ⚠️ Lưu ý
 Đây là kho lưu trữ các bài tập lớn và nhỏ trong quá trình học tập. Nội dung trong kho chỉ mang tính chất tham khảo, phục vụ cho việc ôn tập và củng cố kiến thức, không phải là một dự án hoàn chỉnh hay sản phẩm có thể sử dụng lâu dài.
 ## ⭐ Giới thiệu
