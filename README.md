@@ -69,5 +69,5 @@ Lớp chính: TamGiac, Main
 MSSV: 66130165 · Môn học: Lập trình Java
 <p align = "center">
 <img src="https://github.com/favicon.ico"/>
-Cảm ơn bạn đã ghé thăm — một star sẽ rất được trân trọng💫
+Cảm ơn bạn đã ghé thăm — một sao sẽ rất được trân trọng💫
 </p>
