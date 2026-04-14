@@ -32,7 +32,7 @@ Các dự án bài tập, ví dụ và sản phẩm thực hành trong kho lưu 
 *Note:💡Tư duy như một lập trình viên thực thụ. Không chỉ học để biết, mà còn có thể tự tin viết và phát triển các chương trình Java một cách độc lập.*
 ## Các dự án nổi bật
 ### 1. Quản lý học sinh:
-[Chi tiết](https://github.com/NguyenNgocXuanAnh/66130165-JavaProgramming/tree/main/QLHocSinh)
+[Chi tiết](https://github.com/NguyenNgocXuanAnh/66130165-JavaProgramming/tree/main/ViDu_OOP4_QLHocSinh)
   
 Tổng quan dự án: Xây dựng chương trình quản lý danh sách học sinh bằng ArrayList các đối tượng HocSinh. Hỗ trợ các chức năng cơ bản như khởi tạo danh sách, thêm mới và xoá học sinh, giúp làm quen với thao tác dữ liệu và lập trình hướng đối tượng trong Java.
 
