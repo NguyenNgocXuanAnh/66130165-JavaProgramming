@@ -14,7 +14,7 @@ public class Main {
 		if (kt.KTChan(soA) == 1)
 			System.out.println(soA + " là số chẵn");
 		else 
-			System.out.println(soA +" không là số chẵn");
+			System.out.println(soA +" là số lẻ");
 		//kt số nguyên tố 
 		if (kt.KTnguyento(soA) == 1)
 			System.out.println (soA +" là số nguyên tố");
