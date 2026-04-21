@@ -33,7 +33,7 @@ public class Shape {
 
 	@Override
 	public String toString() {
-		return "A Shape with color of " + color + " and filled=" + filled ;
+		return "Shape [color=" + color + ", filled=" + filled + "]";
 	}
 	
 	
