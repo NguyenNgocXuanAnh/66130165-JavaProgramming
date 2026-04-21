@@ -9,6 +9,10 @@ public class Circle extends Shape {
 
 	}
 
+	public Circle(double radious) {
+		this.radious = radious;
+
+	}
 
 	public Circle(String color, boolean filled, double radious) {
 		super(color, filled);
