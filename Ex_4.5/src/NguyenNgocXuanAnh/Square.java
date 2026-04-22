@@ -23,13 +23,15 @@ public class Square extends Rectangle {
 	public double getSide () {
 		return this.getLength();
 	}
+
 	 public void setSide (double side) {
 		 this.setLength(side);
 	 }
-	 
+	 @Override
 	 public void setWidth (double side) {
 		 this.setWidth(side);
 	 }
+	 @Override
 	 public void setLength (double side) {
 		 this.setLength(side);
 	 }

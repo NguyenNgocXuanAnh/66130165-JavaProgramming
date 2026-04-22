@@ -1,7 +1,7 @@
 package NguyenNgocXuanAnh;
 
 public class Circle extends Shape {
-	private double radious;
+	private double radius;
 
 	
 	public Circle() {
@@ -9,24 +9,24 @@ public class Circle extends Shape {
 
 	}
 
-	public Circle(double radious) {
-		this.radious = radious;
+	public Circle(double radius) {
+		this.radius = radius;
 
 	}
 
 	public Circle(String color, boolean filled, double radious) {
 		super(color, filled);
-		this.radious = radious;
+		this.radius = radius;
 	}
 
 
-	public double getRadious() {
-		return radious;
+	public double getRadius() {
+		return radius;
 	}
 
 
-	public void setRadious(double radious) {
-		this.radious = radious;
+	public void setRadius(double radius) {
+		this.radius = radius;
 	}
 	
 	public double getArea (double radius) {
@@ -44,7 +44,7 @@ public class Circle extends Shape {
 //				+ getRadious() + ", getColor()=" + getColor() + ", isFilled()=" + isFilled() + ", toString()="
 //				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 		 String chuoiXuat = super.toString();
-		 chuoiXuat += ", radious: " + radious;
+		 chuoiXuat += ", radius: " + radius;
 		 return chuoiXuat;
 	 }
 	 
