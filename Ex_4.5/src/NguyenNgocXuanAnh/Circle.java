@@ -40,9 +40,12 @@ public class Circle extends Shape {
 
 	 @Override
 	 public String toString() {
-		return "Circle [radious=" + radious + ", color=" + color + ", filled=" + filled + ", getRadious()="
-				+ getRadious() + ", getColor()=" + getColor() + ", isFilled()=" + isFilled() + ", toString()="
-				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+//		return "Circle [radious=" + radious + ", color=" + color + ", filled=" + filled + ", getRadious()="
+//				+ getRadious() + ", getColor()=" + getColor() + ", isFilled()=" + isFilled() + ", toString()="
+//				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+		 String chuoiXuat = super.toString();
+		 chuoiXuat += ", radious: " + radious;
+		 return chuoiXuat;
 	 }
 	 
 	

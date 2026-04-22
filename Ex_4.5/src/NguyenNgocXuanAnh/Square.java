@@ -27,5 +27,24 @@ public class Square extends Rectangle {
 		 this.setLength(side);
 	 }
 	 
+	 public void setWidth (double side) {
+		 this.setWidth(side);
+	 }
+	 public void setLength (double side) {
+		 this.setLength(side);
+	 }
+
+	 @Override
+	 public String toString() {
+//		return "Square [color=" + color + ", filled=" + filled + ", getSide()=" + getSide() + ", getWidth()="
+//				+ getWidth() + ", getLength()=" + getLength() + ", toString()=" + super.toString() + ", getColor()="
+//				+ getColor() + ", isFilled()=" + isFilled() + ", getClass()=" + getClass() + ", hashCode()="
+//				+ hashCode() + "]";
+		 String chuoiXuat = super.toString();
+		 chuoiXuat += ", width= " + getSide();
+		 chuoiXuat += ", length= " + getSide();
+		 return chuoiXuat;
+	 }
+	 
 
 }

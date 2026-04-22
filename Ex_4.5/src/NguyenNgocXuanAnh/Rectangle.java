@@ -38,10 +38,14 @@ public class Rectangle extends Shape {
 	}
 	 @Override
 	 public String toString() {
-		return "Rectangle [width=" + width + ", length=" + length + ", color=" + color + ", filled=" + filled
-				+ ", getWidth()=" + getWidth() + ", getLength()=" + getLength() + ", getColor()=" + getColor()
-				+ ", isFilled()=" + isFilled() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + "]";
+//		return "Rectangle [width=" + width + ", length=" + length + ", color=" + color + ", filled=" + filled
+//				+ ", getWidth()=" + getWidth() + ", getLength()=" + getLength() + ", getColor()=" + getColor()
+//				+ ", isFilled()=" + isFilled() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
+//				+ ", hashCode()=" + hashCode() + "]";
+		 String chuoiXuat = super.toString();
+		 chuoiXuat += ", width= " + width;
+		 chuoiXuat += ", length= " + length;
+		 return chuoiXuat;
 	 }
 	 
 	
