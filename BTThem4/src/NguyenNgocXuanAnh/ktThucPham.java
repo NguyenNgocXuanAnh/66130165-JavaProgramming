@@ -1,16 +1,21 @@
 package NguyenNgocXuanAnh;
 
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class ktThucPham {
-	private String maHang;
+	private int maHang;
 	private String tenHang;
 	private double dongia;
-	private int NgaySanXuat;
-	private int NgayHetHan;
+	private Date NgaySanXuat, NgayHetHan;
 	public ktThucPham() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public ktThucPham(String maHang, String tenHang, double dongia, int NgaySanXuat, int NgayHetHan) {
+	public ktThucPham(int maHang, String tenHang, double dongia, Date NgaySanXuat, Date NgayHetHan) {
 		super();
 		this.maHang = maHang;
 		this.tenHang = tenHang;
@@ -43,7 +48,7 @@ public class ktThucPham {
 	public int getNgaySanXuat() {
 		return NgaySanXuat;
 	}
-	public void setNgaySanXuat(int ngaySanXuat) {
+	public void setNgaySanXuat(Date ngaySanXuat) {
 		if (ngaySanXuat < 0)
 			System.out.println("Khong hop le");
 		else 
@@ -52,18 +57,23 @@ public class ktThucPham {
 	public int getNgayHetHan() {
 		return NgayHetHan;
 	}
-	public void setNgayHetHan(int ngayHetHan) {
+	public void setNgayHetHan(Date ngayHetHan) {
 		
 		if (ngayHetHan > NgaySanXuat)
 			System.out.println("Khong hop le");
 		else 
 			NgayHetHan = ngayHetHan;
 	}
-	public short kt (int ngayKiemTra){
+	public short kt (Date ngayKiemTra){
 		if (ngayKiemTra == NgayHetHan)
 			return 1;
 		else 
 			return 0;
+	}
+	@Override
+	public String toString() {
+		return "ktThucPham [maHang=" + maHang + ", tenHang=" + tenHang + ", dongia=" + dongia + ", NgaySanXuat="
+				+ NgaySanXuat + ", NgayHetHan=" + NgayHetHan + "]";
 	}
 	
 	
