@@ -8,7 +8,7 @@ package thigk2.NguyenNgocXuanAnh;
 	import java.io.*;
 	import java.util.ArrayList;
 
-	public class Cau3_File {
+	public class Cau3{
 
 		public static void main(String[] args) throws Exception {
 			ArrayList<Integer> ds = new ArrayList<Integer>();
