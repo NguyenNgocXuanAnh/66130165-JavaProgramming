@@ -23,6 +23,15 @@ public class Main {
 		sv1.setLopHS(lopSV1);
 		
 		SinhVien sv2 = new SinhVien ("66131266","Võ Trần Gia Hưng", 2006, "66.cntt-3");
+		SinhVien sv3 = new SinhVien ("66134543","Huỳnh Tấn Vũ", 2006, "66.cntt-3");
+		
+		//in ra màn hình
+		System.out.print(sv1.toString());
+		System.out.print(sv2.toString());
+		System.out.print(sv3.toString());
+		
+		
+		
 		
 	}
 
