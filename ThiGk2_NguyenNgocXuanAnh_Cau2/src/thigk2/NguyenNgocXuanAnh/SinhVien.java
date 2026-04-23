@@ -69,17 +69,12 @@ public class SinhVien {
 		this.lopHS = lopHS;
 	}
 
-
-
 	@Override
 	public String toString() {
-		String chuoiXuat;
-		chuoiXuat = "\nMã số sinh viên: " + mssv;
-		chuoiXuat = "\nHọ và Tên: " + HoTen;
-		chuoiXuat = chuoiXuat + "\nNăm sinh: " + namsinh;
-		chuoiXuat = chuoiXuat + "\nLớp HS: " + lopHS;
-
-		return chuoiXuat;
+		return "SinhVien [mssv=" + mssv + ", HoTen=" + HoTen + ", namsinh=" + namsinh + ", lopHS=" + lopHS + "]";
 	}
+
+
+
 	
 }
