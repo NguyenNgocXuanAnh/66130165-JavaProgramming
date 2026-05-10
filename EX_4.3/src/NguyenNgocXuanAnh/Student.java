@@ -31,10 +31,10 @@ public class Student extends Person {
 	}
 	@Override
 	public String toString() {
-		return "Student " + super.toString()
-				+ "program = " + getProgram()
-				+ "year = " + getYear()
-				+ "fee = " + getFee();
+		return "Student [" + super.toString()
+				+ " program = " + getProgram()
+				+ ", year = " + getYear()
+				+ ", fee = " + getFee() + " ]" ;
 	}
 
 	

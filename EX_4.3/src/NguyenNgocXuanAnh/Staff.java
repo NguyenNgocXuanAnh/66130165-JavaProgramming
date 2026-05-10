@@ -28,9 +28,9 @@ public class Staff extends Person{
 
 	@Override
 	public String toString() {
-		return "Staff " + super.toString()
+		return "Staff [" + super.toString()
 				+ " school = " + getSchool()
-			+ " pay = " + getPay();
+			+ " pay = " + getPay() + " ]";
 	}
 	
 }
