@@ -1,10 +1,10 @@
 package NguyenNgocXuanAnh;
 
-public class Peson {
+public class Person {
 	private String name;
 	private String address;
 	
-	public Peson(String name, String address) {
+	public Person(String name, String address) {
 		super();
 		this.name = name;
 		this.address = address;
@@ -24,7 +24,7 @@ public class Peson {
 
 	@Override
 	public String toString() {
-		return "Peson [name = " + name + ", address = " + address + "]";
+		return "Person [name = " + name + ", address = " + address + "]";
 	}
 	
 	
