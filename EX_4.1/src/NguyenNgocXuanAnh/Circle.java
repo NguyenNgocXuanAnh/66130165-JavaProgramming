@@ -51,7 +51,7 @@ public class Circle {
 
 	@Override
 	public String toString() {
-		return "Circle [radius=" + radius + ", color=" + color + ", getRadius()=" + getRadius() + ", getColor()="
+		return "Circle [radius=" + radius + ", color=" + color + ", Radius =" + getRadius() + ", Color ="
 				+ getColor() + "]";
 	}
 }

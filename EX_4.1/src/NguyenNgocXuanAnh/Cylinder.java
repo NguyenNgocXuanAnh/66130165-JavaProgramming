@@ -13,7 +13,7 @@ public class Cylinder extends Circle {
 		this.height = height;
 	}
 
-	public Cylinder(double radius, String color) {
+	public Cylinder(double radius, double height) {
 		super(radius);
 		this.height = height;
 		
@@ -30,4 +30,12 @@ public class Cylinder extends Circle {
 	public double getVolume () {
 		return getArea()*height;
 	}
+
+	@Override //ghi de
+	public String toString() {
+		return "Cylinder: lớp con của " + super.toString() //super.toString -> goi lop cha   
+        + " height=" + height; 
+	}
+	
+	
 }
