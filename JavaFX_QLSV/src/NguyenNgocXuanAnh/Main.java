@@ -15,7 +15,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
@@ -42,14 +41,14 @@ public class Main extends Application {
 		vb.getChildren().addAll(gr,hb,lb3,lv1);
 		
 		btn1.setOnAction(e->{
-			if (txt1.getText().trim().isEmpty() || txt2.getText().trim().isEmpty()) {
+			if (txt1.getText().trim().isEmpty() || txt2.getText().trim().isEmpty()){
 				Alert a1 = new Alert(Alert.AlertType.ERROR);
 				a1.setContentText("Không hợp lệ!");
 				a1.showAndWait();
 			}
 			String ma = txt1.getText();
 			String ten = txt2.getText();
-			String s = ma+"-"+ten;
+			String s = ma+" - "+ten;
 			lv1.getItems().add(s);
 			txt1.clear();
 			txt2.clear();
