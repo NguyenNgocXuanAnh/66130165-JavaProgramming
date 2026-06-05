@@ -26,7 +26,6 @@ public class Cau3{
 		for (Integer x : ds) {
 			System.out.print(x + " ");
 		}
-		//Kiem tra X co la ky tu cuoi cua MSSV 66131655 ko
 		int X = 5; 
 		
 		boolean timThay = false;
