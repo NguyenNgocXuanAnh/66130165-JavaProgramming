@@ -66,10 +66,10 @@ public class XeHoi {
 		setGiasan(sc.nextDouble());
 	}
 	public void Xuat() {
-		System.out.print(getDongxe());
-		System.out.println(getSochongoi());
-		System.out.println(getNgaysanXuat());
-		System.out.println(getGiasan());
+		System.out.println("DONG XE: "+getDongxe());
+		System.out.println("SO CHO NGOI: "+getSochongoi());
+		System.out.println("NGAY SAN XUAT: "+getNgaysanXuat());
+		System.out.println("GIA BAN: "+getGiasan());
 	}
 	public double TinhGiaBan () {
 		int soNam = Period.between(ngaysanXuat, LocalDate.now()).getYears();
@@ -81,6 +81,13 @@ public class XeHoi {
 	    } else {
 	        return giasan * 1.5;
 	    }
+	 
+	}
+
+	@Override
+	public String toString() {
+		return "XeHoi [dongxe=" + dongxe + ", sochongoi=" + sochongoi + ", ngaysanXuat=" + ngaysanXuat + ", giasan="
+				+ giasan + "]";
 	}
 	
 }
