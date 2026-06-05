@@ -1,80 +1,66 @@
 package thigk2.NguyenNgocXuanAnh;
 
 public class SinhVien {
-	private String mssv;
-	private String HoTen;
-    private int namsinh;
-    private String lopHS;
+	private String maSV;
+	private String hoTen;
+	private int namSinh;
+	private double diemTB;
 	
-    //khởi tạop 0 tham số
-	public SinhVien() {
-		super();
-		// TODO Auto-generated constructor stub
+	public void SinhVien() {
+		
 	}
 
-	//khởi tạo có tham số
-
-	public SinhVien(String mssv, String hoTen, int namsinh, String lopHS) {
-		super();
-		this.mssv = mssv;
-		HoTen = hoTen;
-		this.namsinh = namsinh;
-		this.lopHS = lopHS;
+	public void SinhVien(String maSV, String hoTen, int namSinh, double diemTB) {
+		this.maSV = maSV;
+		this.hoTen = hoTen;
+		this.namSinh = namSinh;
+		this.diemTB = diemTB;
 	}
 
-	//các getter và setter
-
-	public String getMssv() {
-		return mssv;
-	}
-
-
-	public void setMssv(String mssv) {
-		this.mssv = mssv;
-	}
-
-
-
-	public String getHoTen() {
-		return HoTen;
-	}
-
-
-
-	public void setHoTen(String hoTen) {
-		HoTen = hoTen;
-	}
-
-
-
-	public int getNamSinh() {
-		return namsinh; 
-	}
-
-
-
-	public void setNamSinh(int namsinh) {
-		this.namsinh = namsinh;
-	}
-
-
-
-	public String getLopHS() {
-		return lopHS;
-	}
-
-
-
-	public void setLopHS(String lopHS) {
-		this.lopHS = lopHS;
+	public int tinhTuoi() {
+		return 2026 - namSinh;
 	}
 
 	@Override
 	public String toString() {
-		return "SinhVien [mssv=" + mssv + ", HoTen=" + HoTen + ", namsinh=" + namsinh + ", lopHS=" + lopHS + "]";
+		String s = "";
+		s = s + "Ma SV: " + maSV;
+		s = s + "\nHo ten: " + hoTen;
+		s = s + "\nNam sinh: " + namSinh;
+		s = s + "\nDiem TB: " + diemTB;
+		return s;
 	}
 
+	public String getMaSV() {
+		return maSV;
+	}
 
+	public void setMaSV(String maSV) {
+		this.maSV = maSV;
+	}
 
-	
+	public String getHoTen() {
+		return hoTen;
+	}
+
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
+	}
+
+	public int getNamSinh() {
+		return namSinh;
+	}
+
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+
+	public double getDiemTB() {
+		return diemTB;
+	}
+
+	public void setDiemTB(double diemTB) {
+		this.diemTB = diemTB;
+	}
+
 }
